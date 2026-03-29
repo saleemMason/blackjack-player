@@ -12,9 +12,6 @@ def try_find_button(button_image):
     except pyautogui.ImageNotFoundException:
         return None
 
-
-
-
 def bet():
     button = try_find_button('bet_button.png')
     if button:
@@ -56,8 +53,6 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 print("you got 3 seconds")
 time.sleep(3)
 
-
-
 while True:
     if keyboard.is_pressed('esc'):  # kill switch
         print("Stopped by user")
@@ -65,5 +60,4 @@ while True:
 
     bet()
     gamble()
-
-
+    
